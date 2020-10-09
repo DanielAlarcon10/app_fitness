@@ -28,6 +28,7 @@
         app:layout_constraintTop_toBottomOf="@+id/spnClientes" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="318dp"
         android:layout_height="122dp"
         android:layout_marginTop="40dp"
@@ -48,12 +49,14 @@
 
     <TextView
         android:id="@+id/tv"
-        android:layout_width="117dp"
-        android:layout_height="47dp"
-        android:text="TextView"
+        android:layout_width="246dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="64dp"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <Button
         android:id="@+id/button"

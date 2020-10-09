@@ -45,9 +45,19 @@ public class Clientes_act extends AppCompatActivity {
 
         Planes plan = new Planes();
 
+        plan.setXtreme(80000);
+
+        int monto = Integer.parseInt(edit.getText().toString());
+        int resultXtreme = monto-plan.getXtreme();
+
         if(cliente.equals("Roberto") && planes.equals("xtreme"))
         {
-             text.setText("Su saldo es: 24.000");
+             text.setText("el precio del plan es: " + resultXtreme);
+        }
+
+        if(cliente.equals("Roberto") && planes.equals("mindfullness"))
+        {
+            text.setText("el precio del plan es: " + plan.getMindfullness());
         }
     }
 }
